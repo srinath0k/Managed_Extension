@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZZPRC_PURCHASE'
+@MappingRole: true
+define role ZZPRC_PURCHASE {
+  grant select on ZZPRC_PURCHASE
+  where INHERITING CONDITIONS FROM ENTITY ZZPRR_PURCHASE REPLACING { ROOT WITH _BaseEntity };
+}

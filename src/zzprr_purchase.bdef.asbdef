@@ -1,0 +1,49 @@
+managed implementation in class ZZPRBP_R_PURCHASE unique;
+strict ( 2 );
+with draft;
+extensible{ with validations on save; with additional save;}
+define behavior for ZZPRR_PURCHASE alias ZzprrPurchase
+persistent table ZPURCHASE
+extensible
+draft table ZZPRPURCHASE_D
+etag master Locallastchg
+lock master total etag Lastchged
+authorization master( global )
+{
+  field ( mandatory : create )
+   Matnr;
+
+  field ( readonly )
+   Locallastchg,
+   Lastchged,
+   Changedby,
+   Createdby;
+
+  field ( readonly : update )
+   Matnr;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare extensible;
+
+  mapping for ZPURCHASE corresponding extensible
+  {
+    Matnr = matnr;
+    Werks = werks;
+    Ekorg = ekorg;
+    Menge = menge;
+    Meins = meins;
+    Locallastchg = locallastchg;
+    Lastchged = lastchged;
+    Changedby = changedby;
+    Createdby = createdby;
+  }
+
+}

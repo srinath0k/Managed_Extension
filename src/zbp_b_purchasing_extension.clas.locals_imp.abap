@@ -1,0 +1,33 @@
+CLASS lhc_ZzprrPurchase DEFINITION INHERITING FROM cl_abap_behavior_handler.
+  PRIVATE SECTION.
+
+    METHODS ZZValidate FOR VALIDATE ON SAVE
+      IMPORTING keys FOR ZzprrPurchase~ZZValidate.
+
+ENDCLASS.
+
+CLASS lhc_ZzprrPurchase IMPLEMENTATION.
+
+  METHOD ZZValidate.
+  ENDMETHOD.
+
+ENDCLASS.
+
+CLASS lsc_ZZPRR_PURCHASE DEFINITION INHERITING FROM cl_abap_behavior_saver.
+  PROTECTED SECTION.
+
+    METHODS save_modified REDEFINITION.
+
+    METHODS cleanup_finalize REDEFINITION.
+
+ENDCLASS.
+
+CLASS lsc_ZZPRR_PURCHASE IMPLEMENTATION.
+
+  METHOD save_modified.
+  ENDMETHOD.
+
+  METHOD cleanup_finalize.
+  ENDMETHOD.
+
+ENDCLASS.

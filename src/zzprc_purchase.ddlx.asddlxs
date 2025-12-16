@@ -1,0 +1,144 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Matnr'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Matnr'
+annotate view ZZPRC_PURCHASE with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Matnr;
+  
+  @EndUserText.label: 'Werks'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Plant'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Plant'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Werks;
+  
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Purchasing Org'
+  } ]
+  @UI.lineItem: [ {
+    position: 30,
+    label: 'Purchasing Org'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Ekorg;
+  
+  @EndUserText.label: 'Menge'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Quantity'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Quantity'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Menge;
+  
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'UoM'    
+  } ]
+  @UI.lineItem: [ {
+    position: 50 ,
+    label: 'UoM'    
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Meins;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  @UI.hidden: true
+  Locallastchg;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  @UI.hidden: true  
+  Lastchged;
+  
+  @UI.identification: [ {
+    position: 80, 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 ,
+    label: 'Changed By'    
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+
+  Changedby;
+  
+  @UI.identification: [ {
+    position: 90 ,
+    label: 'Created By'    
+  } ]
+  @UI.lineItem: [ {
+    position: 90 ,
+    label: 'Created By'        
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Createdby;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 100 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  _BaseEntity;
+}

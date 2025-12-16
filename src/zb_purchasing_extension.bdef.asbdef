@@ -1,0 +1,8 @@
+extension implementation in class zbp_b_purchasing_extension unique;
+
+extend behavior for ZzprrPurchase with additional save
+{
+validation ZZValidate on save {create;}
+extend draft determine action Prepare { validation ZZValidate; }
+
+}

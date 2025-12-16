@@ -1,0 +1,13 @@
+@EndUserText: {
+  label: 'Service Definition for ZZPRC_PURCHASE'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZZPRC_PURCHASE'
+  }
+}
+@AbapCatalog.extensibility.extensible: true
+define service ZZPRUI_PURCHASE_O4
+  provider contracts odata_v4_ui {
+  expose ZZPRC_PURCHASE;
+}

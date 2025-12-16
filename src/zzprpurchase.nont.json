@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZZPRPURCHASE",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZZPRPURCHASE",
+  "sapObjectType": "ZZPRPURCHASE",
+  "rootNode": true
+}
